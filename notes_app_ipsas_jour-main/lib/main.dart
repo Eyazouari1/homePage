@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/screens/HomeScreen.dart';
 import 'package:notes_app/screens/login_screen.dart';
-
+import 'package:notes_app/screens/pagescreen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -16,9 +16,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      routes: {
+      routes: {  
         'login':(context)=> LoginScreen(),
-        'home': (context)=>HomeScreen()
+        'home': (context)=>const Pagescreen(),
+        'page':(context)=> Pagescreen(),
       },
       initialRoute: 'login',
     );

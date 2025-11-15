@@ -58,19 +58,15 @@ class HomeScreen extends StatelessWidget {
           ),
           
       ),
-         
-    
-  
-       
-      );
-      
-      
       floatingActionButton: IconButton(
             onPressed:(){
             print("ajouter!");
             },
             icon: Icon( Icons.add),
-          );
+          ),
+      );
+      
+      
      
  
   }
